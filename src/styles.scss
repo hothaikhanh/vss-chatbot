@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32;
+}
+
+h3 {
+  font-size: 24;
+}
