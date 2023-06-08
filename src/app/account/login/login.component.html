@@ -28,12 +28,16 @@
           <input type="checkbox" name="savelogin" />
           <label for="savelogin">Lưu mật khẩu</label>
         </div>
-        <a routerLink="">Quên mật khẩu?</a>
+        <a class="no-underline" routerLink="">Quên mật khẩu?</a>
       </div>
 
-      <button class="submit-btn full-width">Đăng nhập</button>
+      <button class="submit-btn full-width" (onclick)="onSubmit()">
+        Đăng nhập
+      </button>
 
-      <span>Bạn chưa có tài khoản? <a routerLink="">Đăng ký</a></span>
+      <span class="center-text"
+        >Bạn chưa có tài khoản? <a routerLink="">Đăng ký</a></span
+      >
     </form>
   </div>
 </div>

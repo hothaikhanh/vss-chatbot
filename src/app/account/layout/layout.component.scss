@@ -1,21 +1,51 @@
-.bg-container {
+.layout-container {
   width: 100%;
   height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
 }
-.bg-graphic {
-  width: 1251.7px;
+.bg-container {
+  width: 100%;
+  position: absolute;
+  z-index: -999;
+  display: flex;
+  gap: 0px;
   height: 100%;
   left: 0;
   top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #e0e9ff;
-  flex-direction: column;
+
+  .rect {
+    width: 50%;
+    background-color: #e0e9ff;
+  }
+  svg {
+    width: 300px;
+    height: 100%;
+    fill: #e0e9ff;
+  }
 }
+
+.slider-container {
+  top: 50%;
+  right: 50%;
+  transform: translateY(-50%);
+
+  width: 800px;
+
+  position: absolute;
+  overflow: hidden;
+}
+
+.slider-items {
+  display: flex;
+}
+.slider-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .bg-img {
   width: 800px;
 }
@@ -44,10 +74,25 @@
   }
 }
 
+.slider-nav {
+  margin-top: 2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.slider-trigger {
+  margin: 0px 4px;
+}
+
+.slider-trigger:checked {
+  background-color: red;
+}
+
 .card-container {
   position: absolute;
   width: 600px;
-  top: 30%;
+  top: 50%;
+  transform: translateY(-50%);
   right: 4rem;
   padding: 1rem;
 }
