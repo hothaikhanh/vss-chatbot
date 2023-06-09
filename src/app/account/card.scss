@@ -1,8 +1,10 @@
 .card {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 6px;
-  padding: 3rem;
+  padding: 3.5rem 3rem 3rem 3rem;
 }
 
 .card-header {
@@ -14,14 +16,14 @@
 }
 .card-logo {
   width: 60%;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .card-heading {
   text-align: center;
   color: #ee0033;
-  font-weight: 600;
-  margin-bottom: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
   text-transform: lowercase;
   font-size: 1.5rem;
 }
@@ -38,7 +40,7 @@
 form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   justify-content: center;
 }
 
@@ -46,10 +48,22 @@ form {
   padding: 1rem;
   border-radius: 6px;
   border: 1px solid #8d99bb;
+  width: 100%;
+}
+
+.text-input::placeholder {
+  font-family: "Quicksand", sans-serif;
+
+  color: #8d99bb;
+}
+
+.text-input:focus {
+  outline: 2px solid #ee0033;
 }
 
 .save-login {
   display: inline-block;
+  margin-bottom: 1rem;
   input {
     margin-right: 8px;
     border: 1px solid #8d99bb;
@@ -58,6 +72,8 @@ form {
 }
 
 .submit-btn {
+  font-family: "Quicksand", sans-serif;
+
   text-align: center;
   padding: 1rem 0.5rem;
   border-radius: 6px;
@@ -68,6 +84,7 @@ form {
   cursor: pointer;
 }
 
+//utility classes//
 .center-text {
   text-align: center;
 }
@@ -77,7 +94,16 @@ form {
 }
 
 .row-container {
+  gap: 1rem;
   display: flex;
   justify-content: space-between;
-  margin: 1rem 0rem;
+}
+
+.small-text {
+  font-size: 0.875rem;
+}
+
+.p-dropdown {
+  border: 1px solid #8d99bb !important;
+  background-color: red;
 }

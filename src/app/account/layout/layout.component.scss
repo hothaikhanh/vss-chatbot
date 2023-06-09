@@ -24,6 +24,10 @@
     height: 100%;
     fill: #e0e9ff;
   }
+
+  path {
+    transform: scaleY(110%);
+  }
 }
 
 .slider-container {

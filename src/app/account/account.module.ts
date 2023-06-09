@@ -5,6 +5,9 @@ import { RegisterComponent } from './register/register.component';
 import { LayoutComponent } from './layout/layout.component';
 import { AccountRoutingModule } from './account-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DropdownModule } from 'primeng/dropdown';
+
+
 
 
 
@@ -17,7 +20,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     AccountRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DropdownModule,
   ]
 })
 export class AccountModule { }
