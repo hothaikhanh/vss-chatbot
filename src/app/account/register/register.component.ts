@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 
-interface Country {
+interface Data {
   name: string;
   code: string;
 }
@@ -15,7 +15,8 @@ interface Country {
 
 export class RegisterComponent implements OnInit {
   form!: FormGroup;
-  countries: Country[]
+  countries: Data[]
+  fields: Data[]
 
   ngOnInit(): void {
     this.form = new FormGroup({
@@ -33,6 +34,14 @@ export class RegisterComponent implements OnInit {
       { name: "Vietnam", code: "VN" },
       { name: "US", code: "US" },
       { name: "Japan", code: "JP" },
+    ]
+
+
+    this.fields = [
+
+      { name: "Bán lẻ", code: "wholesale" },
+      { name: "Xây dựng", code: "construction" },
+      { name: "Xuất nhập khẩu", code: "logistic" },
 
     ]
   }

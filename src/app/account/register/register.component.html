@@ -40,20 +40,20 @@
         />
 
         <p-dropdown
-          class="prime-overide"
           formControlName="country"
           [options]="countries"
           optionLabel="name"
+          placeholder="Quốc gia"
         ></p-dropdown>
       </div>
 
       <div>
-        <input
-          class="text-input full-width"
-          type="text"
+        <p-dropdown
           formControlName="field"
+          [options]="fields"
+          optionLabel="name"
           placeholder="Nhập lĩnh vực"
-        />
+        ></p-dropdown>
       </div>
 
       <div>

@@ -4,7 +4,7 @@
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 6px;
-  padding: 3.5rem 3rem 3rem 3rem;
+  padding: 3rem;
 }
 
 .card-header {
@@ -26,6 +26,7 @@
   margin-bottom: 2.5rem;
   text-transform: lowercase;
   font-size: 1.5rem;
+  width: 464px;
 }
 
 .card-heading::first-letter {
@@ -40,7 +41,7 @@
 form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   justify-content: center;
 }
 
@@ -49,11 +50,12 @@ form {
   border-radius: 6px;
   border: 1px solid #8d99bb;
   width: 100%;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
 }
 
 .text-input::placeholder {
   font-family: "Quicksand", sans-serif;
-
   color: #8d99bb;
 }
 
@@ -103,7 +105,33 @@ form {
   font-size: 0.875rem;
 }
 
-.p-dropdown {
-  border: 1px solid #8d99bb !important;
-  background-color: red;
+//primeNG overwrite
+:host ::ng-deep {
+  p-dropdown {
+    width: 100%;
+    color: #8d99bb !important;
+  }
+
+  .p-dropdown {
+    font-family: "Quicksand", sans-serif;
+    border: 1px solid #8d99bb;
+    border-radius: 6px;
+    align-items: center;
+    width: 100%;
+  }
+  .p-dropdown.p-component.p-focus {
+    outline: 2px solid #ee0033;
+    box-shadow: none;
+    border: 1px solid #8d99bb;
+  }
+
+  .p-placeholder {
+    font-family: "Quicksand", sans-serif;
+    opacity: 0.5;
+  }
+
+  .p-inputtext {
+    font-family: "Quicksand", sans-serif;
+    padding: 1rem;
+  }
 }

@@ -6,6 +6,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { AccountRoutingModule } from './account-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DropdownModule } from 'primeng/dropdown';
+import { CarouselModule } from 'primeng/carousel';
 
 
 
@@ -22,6 +23,7 @@ import { DropdownModule } from 'primeng/dropdown';
     AccountRoutingModule,
     ReactiveFormsModule,
     DropdownModule,
+    CarouselModule
   ]
 })
 export class AccountModule { }
